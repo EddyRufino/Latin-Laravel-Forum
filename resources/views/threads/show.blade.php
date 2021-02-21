@@ -6,12 +6,8 @@
   </x-slot>
 
   <x-slot name="slot">
-    @foreach ($threads as $thread)
-        <li>
-            <a href="{{ $thread->path() }}">
-                {{ $thread->title }}
-            </a>
-        </li>
-    @endforeach
+        <li>{{ $thread->title }}</li>
+        <br>
+        <li>{{ $thread->body }}</li>
   </x-slot>
 </x-guest-layout>

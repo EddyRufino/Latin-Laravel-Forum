@@ -25,7 +25,7 @@ class ThreadFactory extends Factory
         return [
             'user_id' => User::factory(),
             'title' => $this->faker->sentence(3),
-            'body' => $this->faker->sentence(5),
+            'body' => $this->faker->sentence(3),
         ];
     }
 }
